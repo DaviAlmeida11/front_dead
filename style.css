@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+   background-color: black;
+    height: 130px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.lupa{
+    height: 60px;
+}
+
+
+header img{
+    height: 100px;
+   
+    
+   
+}
+header span{
+    color: gray;
+    font-size: 30px;
+     font-family: 'Poppins';
+
+}
+
+
+
+main{
+  display: flex;
+    height: 85vh;
+   background-color: grey;
+   align-items: center;
+   justify-content: center;
+  justify-content: space-around;
+background-image: url(img/fundo.jpg);
+background-repeat: no-repeat;      /* não repetir a imagem */
+  background-size: cover;            /* ocupa toda a tela mantendo proporção */
+  background-position: center center;/* centraliza a imagem */
+  background-attachment: fixed;      /* mantém fixa ao rolar a página */
+  
+}
+
+main span{
+  width: 80vh;
+    font-size: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 5px 5px 10px rgb(12, 15, 15);
+    color: rgb(97, 30, 30);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+
+   
+}
+
+main img{
+    position: absolute;
+}
+
+
+footer{
+    display: flex;
+    background-color: black;
+    height: 100px;
+}
