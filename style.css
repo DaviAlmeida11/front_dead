@@ -5,7 +5,8 @@
 }
 
 header{
-   background-color: black;
+    background-color: rgba(0, 0, 0, 0.9); /* 👈 tem que ser transparente */
+    backdrop-filter: blur(20px);          /* 👈 desfoque */
     height: 130px;
     align-items: center;
     display: flex;
@@ -14,6 +15,7 @@ header{
 }
 .lupa{
     height: 60px;
+    cursor: pointer;
 }
 
 
@@ -24,44 +26,58 @@ header img{
    
 }
 header span{
-    color: rgb(223, 223, 223);
+    color: rgb(184, 103, 103);
     font-size: 30px;
      font-family: 'Poppins';
      transition: 0.5px;
      border-radius: 5px;
+     cursor: pointer;
+       caret-color: transparent;   /* remove a linha piscando */
+  user-select: none;          /* não deixa selecionar o texto */
    
 
 
 }
 
 span:hover{
-     background-color: rgb(59, 56, 56);
+     background-color: rgb(92, 76, 76);
+     box-shadow: 0px 0px 12px 4px ;
+
 }
 
 
 
 main{
+  position: relative;
   display: flex;
-    height: 85vh;
-   background-color: grey;
-   align-items: center;
-   justify-content: center;
-  justify-content: space-around;
-background-image: url(img/fundo.jpg);
-background-repeat: no-repeat;      /* não repetir a imagem */
-  background-size: cover;            /* ocupa toda a tela mantendo proporção */
-  background-position: center center;/* centraliza a imagem */
-  background-attachment: fixed;      /* mantém fixa ao rolar a página */
+  height: 80vh;
+  align-items: center;
+ justify-content: center;
+ gap: 10px;
+    background: rgba(0, 0, 0, 0.3)
+
   
+}
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
 }
 
 main h2{
-  width: 80vh;
-    font-size: 250px;
+  width: 50vh;
+    font-size: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     text-shadow: 5px 5px 10px rgb(12, 15, 15);
+    cursor: pointer;
+      caret-color: transparent;   /* remove a linha piscando */
+  user-select: none;          /* não deixa selecionar o texto */
     color: rgb(97, 30, 30);
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     
@@ -69,13 +85,10 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
    
 }
 
-main img{
-    position: absolute;
-}
 
 
 footer{
     display: flex;
     background-color: black;
-    height: 100px;
+    height: 123px;
 }
